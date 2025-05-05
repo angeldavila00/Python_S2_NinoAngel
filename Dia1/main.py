@@ -55,7 +55,8 @@ booleanitoNuevo = True
 while(booleanitoNuevo==True):
     print("sigo siendo verdadero")
     booleanitoNuevo =False
-   
+
+
     # Opcion 2.
 while(booleanitoNuevo):
     print("sigo siendo verdadero")
@@ -116,7 +117,7 @@ print("El area del circulo es: " + str(int(areaCirculo(radioUsuario))))
 
 #2. Funcion con retorno y sin parametros
 def valorDolar():
-     return  4.299
+    return  4.299
 valorFinalDolar=valorDolar()
 print("El valor del dolar es: " + str(valorFinalDolar))
 
@@ -126,7 +127,7 @@ def concatenarNombres(nombre,apellido):
 concatenarNombres ("Angel", "Davila")
 #4. Funcion sin retorno y sin parametros
 def funcionX():
-     print("Hola soy la funcion X")
+    print("Hola soy la funcion X")
 
 
 
