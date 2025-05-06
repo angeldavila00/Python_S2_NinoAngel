@@ -82,3 +82,38 @@ print(" la temparatura en Fahrenheit es: " + str (fahrenheit))
 
 print ("")
 
+print ("Algoritmo para determinar si un número es par o impar ")
+
+def es_par(n):
+    return n % 2 == 0
+n = int(input("Ingrese un número entero: "))
+if es_par(n):
+    print("Es par" )
+else:
+    print("Es impar")
+
+print ("")  
+
+print ("Hola ejercicio para calcular el área de un triángulo")
+print("")
+base = float(input("Base del triángulo: "))
+altura = float(input("Altura del triángulo: "))
+area = (base * altura) / 2
+print("Área del triángulo:", area)
+
+print ("")  
+
+print("Ejercicio para crear una tabla de multiplicar")
+print("")   
+
+n = int(input("Ingrese un número entero: "))
+for i in range(1, 10+1):
+    print(f"{n} x {i} = {n * i}")
+
+print ("")  
+
+print("Ejercicio para calcular el área de un círculo")
+print("")  
+circulo = float(input("Ingrese el radio del círculo: "))
+area = 3.14 * (circulo ** 2)
+print("Área del círculo:", area)
