@@ -1,9 +1,7 @@
 ## #######################################
 ## ########### EJERCICIO Nomina ###########
 ## #######################################
-## Desarrollado por : Angel Niño Davila 
-## Cedula : 1.005.335.914
-## #######################################
+
 
 print("Bienvenido a la Nómina ACME")
 
@@ -75,3 +73,6 @@ print("El empleado que menos gana es:", nombreMenor, "con un sueldo neto de:", m
 print("-----------------------------")
 print("Promedio de Sueldos Brutos:", promedioBruto)
 print("Promedio de los Sueldos Netos:", promedioNeto)
+
+## Desarrollado por : Angel Niño Davila 
+## Cedula : 1.005.335.914

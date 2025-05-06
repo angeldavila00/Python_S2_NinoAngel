@@ -1,8 +1,6 @@
 ## #######################################
 ## ########### EJERCICIO Hamburguesa ###########
 ## #######################################
-## Desarrollado por : Angel Niño Davila 
-## Cedula : 1.005.335.914
 ## #######################################
 
 
@@ -81,3 +79,6 @@ for i in range(cantidadHamburguesas):
     total = acumulado + (acumulado*0.1)
     print("El Servivio del 10 Porciento es: ", int (acumulado*0.1))
     print("El total con Servicio Incluido es: " , int(total))
+
+## Desarrollado por : Angel Niño Davila 
+## Cedula : 1.005.335.914
