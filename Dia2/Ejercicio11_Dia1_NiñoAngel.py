@@ -3,14 +3,19 @@
 ## #######################################
 
 
-print("Algoritmo de par y impar")
+print("Ejercicio de generar una serie de Fibonacci")
 
-numero= int(input("Dime el numero?"))
+cantMax= int(input("Dame el numero maximo de la sucesion: "))
 
-if numero % 2 == 0:
-    print("Es par")
-else:
-    print("Es impar")
+a=0
+b=1
+x=1
+while x <= cantMax:
+    print("", a)
+    c=a+b
+    a=b
+    b=c
+    x=x+1
 
 ## Desarrollado por : Angel Niño Davila 
 ## Cedula : 1.005.335.914
