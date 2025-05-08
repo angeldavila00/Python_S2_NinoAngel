@@ -1,9 +1,13 @@
 #####
 #PRUEBAS DE CODIGO##
+n=int(input())
+salida=""
+for i in range(1,n+1):
+    salida=salida+ str(i)
+    print(salida)
 
-if __name__ == '__main__':
-    n = 5
-for i in range (1,n+1):
-    print(i, end="")
+
+
+
 ## Desarrollado por : Angel Niño Davila 
 ## Cedula : 1.005.335.914
