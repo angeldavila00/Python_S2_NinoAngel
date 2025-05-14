@@ -27,7 +27,7 @@ diccionarioRobusto2={
     "apellido":"Bejarano",
     "edad":27,
     "telefonos":[{"codigo":58,"numero":2323057565,"tipo":"trabajo"}
-                 ,{"codigo":22,"numero":6857493658,"tipo":"personal"}]
+            ,{"codigo":22,"numero":6857493658,"tipo":"personal"}]
 }
 listaRobusta=[]
 listaRobusta.append(diccionarioRobusto)
@@ -124,9 +124,6 @@ while(booleanito):
     else:
         print("No es una opción válida")
 
-    
-    
-    
 
 
 ## Desarrollado por : Angel Niño Davila 
