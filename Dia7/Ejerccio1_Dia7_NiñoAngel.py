@@ -1,22 +1,26 @@
-#####
-#PRUEBAS DE CODIGO##
-# Leer la cantidad de estudiantes
 # ##########################
-# #### Clase Dia 6 ######
+# #### Clase Dia 7 ######
 # ##########################
-# Diccionarios
-#Un DICccionario  es una colección de elementos , donde cada elementos insertado tiene una llave úntica, 
-# la cual va acompañada de un valor 
 
-##Diccionario con listas
 diccionarioRobusto={
     "id":1,
     "nombre":"Pedro",
     "apellido":"Gómez",
     "edad":25,
-    "telefonos":[{"codigo":57,"numero":3023019865,"tipo":"trabajo"}
-                 ,{"codigo":1,"numero":3983054625,"tipo":"personal"}]
+    "telefonos":[
+        {
+            "codigo":57,
+            "numero":3023019865,
+            "tipo":"trabajo"
+        },
+        {
+            "codigo":1,
+            "numero":3983054625,
+            "tipo":"personal"
+        }
+    ]
 }
+
 diccionarioRobusto2={
     "id":2,
     "nombre":"Corpus",
@@ -28,24 +32,10 @@ diccionarioRobusto2={
 listaRobusta=[]
 listaRobusta.append(diccionarioRobusto)
 listaRobusta.append(diccionarioRobusto2)
-print("")
-print("")
-print(listaRobusta)
-print("")
-print("")
-#print(listaRobusta[0]["telefonos"][1]['numero'])
-
-for i in range(len(listaRobusta[0]["telefonos"])):
-    if(listaRobusta[0]["telefonos"][i]['tipo']=="trabajo"):
-        print(listaRobusta[0]["telefonos"][i]['numero'])
-print("")
-print("")
-numeroPrimeraPersona=listaRobusta[0]["telefonos"][1]['numero']
-tipoNumeroPP=listaRobusta[0]["telefonos"][1]['tipo']
-print(str(numeroPrimeraPersona)+ tipoNumeroPP)
-
+userCant = 2
 booleanito = True
 while(booleanito):
+    print(listaRobusta)
     print("#################")
     print("#### Librería de personas ####")
     print("#################")
@@ -61,7 +51,39 @@ while(booleanito):
         print("#################")
         print("#### Crear Persona ####")
         print("#################")
-        diccionarioVacio={}
+
+        # receceocuón de dati¿os de usuarios
+        nombre = input('Por favor, ingrese el nombre: ')
+        apellido = input('Por favor, ingrese el apellido: ')
+        edad = int(input('Por favor, ingrese el edad: '))
+        canTelefono = int(input('Por favor, ingrese la cantidad de telefonos: '))
+
+        diccionarioUsuario={
+            "id": (listaRobusta[len(listaRobusta)-1]["id"])+1,
+            "nombre": nombre,
+            "apellido": apellido,
+            "edad": edad,
+            "telefonos": []
+        }
+
+        for i in range(canTelefono):
+            codigo = int(input('Por favor, ingrese el codigo: '))
+            numero = int(input('Por favor, ingrese el numero: '))
+            tipo = input('Por favor, ingrese el tipo de telefono:' )
+            data_telefono = {
+                "codigo": codigo,
+                "numero": numero,
+                "tipo": tipo
+            }
+            diccionarioUsuario['telefonos'].append(data_telefono)
+
+        listaRobusta.append(diccionarioUsuario)
+        print(' ')
+        userCant += 1 
+        # userCant = userCant + 1
+        print(f'Persona {nombre} fue creada exitosamente.')
+
+        
 
     elif(opcionUsuario==2):
         for i in range(len(listaRobusta)):
@@ -84,9 +106,18 @@ while(booleanito):
                     print("#### - Tipo: Es su número de Trabajo")
                 
                 print("---------------------------")
-
-            
-            
+    elif(opcionUsuario==3):
+        print("#################")
+        print("#### Buscar Persona Individual ####")
+        print("#################")
+        opcionIndividual = int(input("Por favor ingresar el ID de la persona deseada:"))
+        print("#################")
+        print("#### Persona #",opcionIndividual," ####")
+        print("#################")
+        print("ID:", listaRobusta[opcionIndividual-1]["id"])
+        print("Nombre:",listaRobusta[opcionIndividual-1]["nombre"])
+        print("Apellido:",listaRobusta[opcionIndividual-1]["apellido"])
+        print("Edad",listaRobusta[opcionIndividual-1]["edad"])
     elif(opcionUsuario==6):
         print("Chaousssss")
         booleanito=False
@@ -96,7 +127,6 @@ while(booleanito):
     
     
     
-#Desarrollado por Pedro Felipe Gómez : C.C-1.555.444.333
 
 
 ## Desarrollado por : Angel Niño Davila 

@@ -1,12 +1,72 @@
-#####
-#PRUEBAS DE CODIGO##
-# Leer la cantidad de estudiantes
 # ##########################
 # #### Clase Dia 6 ######
 # ##########################
 # Diccionarios
 #Un DICccionario  es una colección de elementos , donde cada elementos insertado tiene una llave úntica, 
 # la cual va acompañada de un valor 
+'''
+Pepito es Cool
+{
+    "nombre":"Pedro",
+    "apellido":"Gómez"
+}
+'''
+miPrimerDiccionario={
+    "nombre":"Pedro",
+    "apellido":"Gómez",
+    "edad":25
+}
+print(miPrimerDiccionario)
+print(type(miPrimerDiccionario))
+
+##Para recorrer un DICcionario debes llamar a la llave
+print(miPrimerDiccionario["nombre"])
+print(type(miPrimerDiccionario["nombre"]))
+# Se puede recorrer con puntos en algunos casos
+'''
+print(miPrimerDiccionario.nombre)
+'''
+##Para reemplazar un valor del diccionario
+miPrimerDiccionario["nombre"]="Pedro"
+nombre = miPrimerDiccionario["nombre"]
+apellido= miPrimerDiccionario["apellido"]
+print(miPrimerDiccionario["nombre"]+" "+miPrimerDiccionario["apellido"])
+
+miPrimerDiccionario["ciudadNacimiento"]="Monteria"
+
+print(miPrimerDiccionario)
+miPrimerDiccionario["ciudadNacimiento"]="Bucaramanga"
+
+print(miPrimerDiccionario)
+#Un objeto tiene varios atributos, 
+# que pertenecen al mismo objeto. 
+listaPersonas=[]
+listaPersonas.append(miPrimerDiccionario)
+print("")
+print("")
+print(listaPersonas)
+listaPersonas.append({
+    "nombre":"Corpus",
+    "apellido":"Bejarano",
+    "edad":27
+})
+print("")
+print("")
+print(listaPersonas)
+print("")
+print("")
+print(listaPersonas[1])
+print(type(listaPersonas[1]))
+print(listaPersonas[0]["edad"])
+
+#Recorrer listas con diccionarios
+for i in range(len(listaPersonas)):
+    print("#################")
+    print("####Persona #",i+1," ####")
+    print("#################")
+    print("Nombre:",listaPersonas[i]["nombre"])
+    print("Apllido:",listaPersonas[i]["apellido"])
+    print("Edad:",listaPersonas[i]["edad"])
 
 ##Diccionario con listas
 diccionarioRobusto={
@@ -96,7 +156,7 @@ while(booleanito):
     
     
     
-#Desarrollado por Pedro Felipe Gómez : C.C-1.555.444.333
+
 
 
 ## Desarrollado por : Angel Niño Davila 

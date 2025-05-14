@@ -1,6 +1,3 @@
-#####
-#PRUEBAS DE CODIGO##
-# Leer la cantidad de estudiantes
 # ##########################
 # #### Clase Dia 6 ######
 # ##########################
@@ -14,16 +11,24 @@ diccionarioRobusto={
     "nombre":"Pedro",
     "apellido":"Gómez",
     "edad":25,
-    "telefonos":[{"codigo":57,"numero":3023019865,"tipo":"trabajo"}
-                 ,{"codigo":1,"numero":3983054625,"tipo":"personal"}]
+    "telefonos":[{"codigo":57,
+                  "numero":3023019865,
+                  "tipo":"trabajo"}
+                 ,{"codigo":1,
+                   "numero":3983054625,
+                   "tipo":"personal"}]
 }
 diccionarioRobusto2={
     "id":2,
     "nombre":"Corpus",
     "apellido":"Bejarano",
     "edad":27,
-    "telefonos":[{"codigo":58,"numero":2323057565,"tipo":"trabajo"}
-                 ,{"codigo":22,"numero":6857493658,"tipo":"personal"}]
+    "telefonos":[{"codigo":58,
+                  "numero":2323057565,
+                  "tipo":"trabajo"}
+                 ,{"codigo":22,
+                   "numero":6857493658,
+                   "tipo":"personal"}]
 }
 listaRobusta=[]
 listaRobusta.append(diccionarioRobusto)
@@ -43,7 +48,7 @@ print("")
 numeroPrimeraPersona=listaRobusta[0]["telefonos"][1]['numero']
 tipoNumeroPP=listaRobusta[0]["telefonos"][1]['tipo']
 print(str(numeroPrimeraPersona)+ tipoNumeroPP)
-
+userCant=2
 booleanito = True
 while(booleanito):
     print("#################")
@@ -57,11 +62,52 @@ while(booleanito):
     print("5. Eliminar a una persona en específico")
     print("6. Cerrar programa")
     opcionUsuario=int(input("Escoja una opción (Numérica):"))
+
+    ###CREAR USUARIO    
+
     if(opcionUsuario==1):
         print("#################")
         print("#### Crear Persona ####")
         print("#################")
-        diccionarioVacio={}
+        
+        ################################################33
+
+        nombre=input("Ingresa el nombre: ")
+        apellido=input("Ingresa el apellido: ")
+        edad=int(input("Ingresa la edad: "))
+        canTelefono=int(input("Ingresa la cantidad de telefonos: "))
+
+        diccionarioUsuario={
+
+            "id":(listaRobusta[len(listaRobusta)-1]),
+            "Nmbre":nombre,
+            "apellidio": apellido,
+            "edad": edad,
+            "telefono": []
+        }
+
+        for i in range(canTelefono):
+            codigo= int(input("Dime el codigo: "))
+            numero =int(input("Dime el numero: "))
+            tipo = input("Ingresa el tipo de telefono: ")
+
+            dataTelefono = {
+                "codigo": codigo,
+                "numero": numero,
+                "tipo": tipo
+        
+        }
+        
+        diccionarioUsuario["telefono"].append(dataTelefono)
+
+
+        listaRobusta.append(diccionarioUsuario)
+
+       
+        
+        print(f"El usuario {nombre} fue creado con exito")
+        
+        
 
     elif(opcionUsuario==2):
         for i in range(len(listaRobusta)):
@@ -69,7 +115,7 @@ while(booleanito):
             print("#### Persona #",i+1," ####")
             print("#################")
             print("ID:", listaRobusta[i]["id"])
-            print("Nombre:",listaRobusta[i]["nombre"])
+            print("nombre:",listaRobusta[i]["nombre"])
             print("Apellido:",listaRobusta[i]["apellido"])
             print("Edad",listaRobusta[i]["edad"])
             
@@ -84,7 +130,18 @@ while(booleanito):
                     print("#### - Tipo: Es su número de Trabajo")
                 
                 print("---------------------------")
+    elif (opcionUsuario==3):
+        print("##########################")
+        print("### Persona individual#####")
+        print("##########################")
+        opcionIndividual = int(input("por favor ingresaa el ID de la persona"))
+        print("##########################")
+        print("Persona a", opcionIndividual)
+        print("##########################")
+        print("ID:", listaRobusta[opcionIndividual-1])
 
+
+        
             
             
     elif(opcionUsuario==6):
@@ -97,7 +154,3 @@ while(booleanito):
     
     
 #Desarrollado por Pedro Felipe Gómez : C.C-1.555.444.333
-
-
-## Desarrollado por : Angel Niño Davila 
-## Cedula : 1.005.335.914
