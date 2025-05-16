@@ -31,7 +31,7 @@ while(booleanito):
         if estado==1:
             print("Estado Activo")
             estadoTexto= "Estado Activo!"
-        else:
+        elif estado==2:
             print("Estado Inactivo")
             estadoTexto = "Estado Inactivo"
 
@@ -47,6 +47,8 @@ while(booleanito):
     }
     listaArt.append(DiccionarioArtista)
     print(f"persona {nombreArt} fue creada con exito y se encuentra en {estadoTexto}")
+
+
     if(opcionUsuario==2):
         print("_________________________________")
         print("Actualizacion y registro de paises: ")
