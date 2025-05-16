@@ -2,8 +2,6 @@
 # #### Clase Dia8 ######
 # ##########################
 # ##########################
-# #### Clase Dia 7 ######
-# ##########################
 from FuncionesLista import *
 diccionarioRobusto={
     "id":1,

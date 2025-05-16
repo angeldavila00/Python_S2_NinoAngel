@@ -1,0 +1,38 @@
+
+
+Gestión de Datos de Artistas Musicales:
+
+Artistas: El sistema debe permitir registrar cada dato de artistas musicales con la siguiente información:
+    1.Nombre del artista.
+    2.País de origen (nombre, código ISO3).
+    3.Años de actividad.
+    4.Año de lanzamiento del primer disco que llegó a las listas.
+    5.Género musical.
+    6.Unidades certificadas totales.
+    7.Ventas reclamadas.
+    8.Estado del artista (si está activo o no).
+
+Interacción con Países y Géneros Musicales:
+Países: Registro y gestión de la información de los países incluyendo:
+    1.Nombre del país.
+   
+
+Géneros Musicales: Registro y gestión de la información de los géneros musicales incluyendo:
+    1.ID del género.
+    2.Descripción del género.
+
+
+Generación de Informes:
+Informes de artistas: Listado de todos los datos de artistas musicales para un país específico en un período de
+tiempo específico, incluyendo detalles de años de actividad y unidades certificadas. Informes de ventas
+musicales: Listado de las unidades certificadas y ventas reclamadas año a año para un artista específico.
+
+
+Módulo de Reportes:
+
+El módulo de reportes debe generar las siguientes solicitudes:
+1. Obtener todos los datos de artistas musicales para Reino Unido desde 1960 hasta 1970.
+2. Datos de artistas musicales para el género 'Rock/pop’
+3. Obtener los datos de artistas musicales de los últimos 10 años para todos los países.
+4. Número de registros de artistas por año.
+5. Unidades certificadas totales registradas para todos los países en 2023.

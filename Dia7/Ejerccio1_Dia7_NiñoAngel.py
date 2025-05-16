@@ -52,7 +52,7 @@ while(booleanito):
         print("#### Crear Persona ####")
         print("#################")
 
-        # receceocuón de dati¿os de usuarios
+        # receceocuón de datos de usuarios
         nombre = input('Por favor, ingrese el nombre: ')
         apellido = input('Por favor, ingrese el apellido: ')
         edad = int(input('Por favor, ingrese el edad: '))

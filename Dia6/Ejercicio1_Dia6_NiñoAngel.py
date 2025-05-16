@@ -75,7 +75,7 @@ diccionarioRobusto={
     "apellido":"Gómez",
     "edad":25,
     "telefonos":[{"codigo":57,"numero":3023019865,"tipo":"trabajo"}
-                 ,{"codigo":1,"numero":3983054625,"tipo":"personal"}]
+                ,{"codigo":1,"numero":3983054625,"tipo":"personal"}]
 }
 diccionarioRobusto2={
     "id":2,
@@ -83,7 +83,7 @@ diccionarioRobusto2={
     "apellido":"Bejarano",
     "edad":27,
     "telefonos":[{"codigo":58,"numero":2323057565,"tipo":"trabajo"}
-                 ,{"codigo":22,"numero":6857493658,"tipo":"personal"}]
+                ,{"codigo":22,"numero":6857493658,"tipo":"personal"}]
 }
 listaRobusta=[]
 listaRobusta.append(diccionarioRobusto)
